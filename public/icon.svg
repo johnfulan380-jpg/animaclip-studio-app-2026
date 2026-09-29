@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+    <linearGradient id="layerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#f8fafc" stop-opacity="0.85"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background Rounded Rect -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+
+  <!-- Inner Studio Border Glow -->
+  <rect x="24" y="24" width="464" height="464" rx="92" fill="none" stroke="#ffffff" stroke-width="4" stroke-opacity="0.15"/>
+
+  <!-- Main Animation Canvas Card / Layer Stacks -->
+  <g filter="url(#shadow)">
+    <!-- Back Layer Card (rotated) -->
+    <rect x="136" y="116" width="240" height="240" rx="36" fill="#ffffff" fill-opacity="0.25" transform="rotate(-8 256 236)"/>
+
+    <!-- Middle Layer Card -->
+    <rect x="146" y="126" width="220" height="220" rx="34" fill="#ffffff" fill-opacity="0.5" transform="rotate(4 256 236)"/>
+
+    <!-- Front Animation Frame Card -->
+    <rect x="136" y="126" width="240" height="240" rx="36" fill="url(#layerGrad)"/>
+    
+    <!-- AnimaClip 'AC' Pen / Play Symbol inside card -->
+    <!-- Stylized Red Play Triangle / Clapperboard -->
+    <polygon points="220,186 324,246 220,306" fill="#dc2626"/>
+    
+    <!-- Animation Timeline Dot Indicators -->
+    <circle cx="216" cy="336" r="6" fill="#dc2626"/>
+    <circle cx="236" cy="336" r="6" fill="#dc2626"/>
+    <circle cx="256" cy="336" r="8" fill="#dc2626"/>
+    <circle cx="276" cy="336" r="6" fill="#dc2626"/>
+    <circle cx="296" cy="336" r="6" fill="#dc2626"/>
+  </g>
+
+  <!-- AnimaClip Typography Subtext -->
+  <text x="256" y="432" font-family="'Outfit', system-ui, sans-serif" font-size="44" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1">ANIMACLIP</text>
+</svg>

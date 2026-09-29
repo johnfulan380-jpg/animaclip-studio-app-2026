@@ -1,0 +1,6 @@
+{
+  "name": "AnimaClip Studio",
+  "description": "Estúdio de animação 2D frame-a-frame estilo FlipaClip com suporte a múltiplas camadas, onion skin e exportação em alta resolução (Full HD, 4K, GIF e Vídeo).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
